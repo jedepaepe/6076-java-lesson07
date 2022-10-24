@@ -8,7 +8,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-public class VerticalSquare extends Application {
+public class VerticalRectangle extends Application {
     @Override
     public void start(Stage stage) {
         Canvas canvas = new Canvas(600, 600);
