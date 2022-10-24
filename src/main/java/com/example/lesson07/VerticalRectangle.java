@@ -25,12 +25,12 @@ public class VerticalRectangle extends Application {
                 gc.setFill(Color.AQUA);
                 gc.fillRect(0, 0, canvas.getWidth() / 2, canvas.getHeight());
                 gc.setFill(Color.PURPLE);
-                gc.fillRect(canvas.getHeight() / 2, 0, canvas.getWidth(), canvas.getHeight());
+                gc.fillRect(canvas.getHeight() / 2, 0, canvas.getWidth() / 2, canvas.getHeight());
             } else {
                 gc.setFill(Color.BLUE);
                 gc.fillRect(0, 0, canvas.getWidth() / 2, canvas.getHeight());
                 gc.setFill(Color.PINK);
-                gc.fillRect(canvas.getHeight() / 2, 0, canvas.getWidth(), canvas.getHeight());
+                gc.fillRect(canvas.getHeight() / 2, 0, canvas.getWidth() / 2, canvas.getHeight());
             }
         });
 
