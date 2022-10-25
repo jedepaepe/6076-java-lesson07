@@ -8,7 +8,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-public class DemoMouse extends Application {
+public class VerticalRectangleMouseMoved extends Application {
     @Override
     public void start(Stage stage) {
         Canvas canvas = new Canvas(600, 600);
@@ -35,7 +35,7 @@ public class DemoMouse extends Application {
         });
 
         stage.setScene(new Scene(new VBox(canvas)));
-        stage.setTitle("demo mouse");
+        stage.setTitle("rectangles & mouvement de la souris");
         stage.show();
     }
 }
