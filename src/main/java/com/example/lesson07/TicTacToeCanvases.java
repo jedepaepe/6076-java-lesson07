@@ -22,13 +22,14 @@ public class TicTacToeCanvases extends Application {
         for (int x = 0; x < nrColumns; ++x) {
             for (int y = 0; y < nrColumns; ++y) {
                 Canvas canvas = new Canvas(columnWidth, columnWidth);
-                gridPane.add(canvas, x, y);
                 GraphicsContext gc = canvas.getGraphicsContext2D();
                 gc.setFill(Color.BLACK);
-                gc.fillRect(0, 0, canvas.getWidth(), canvas.getHeight());
-                gc.setStroke(Color.WHITE);
-                gc.strokeRect(0, 0, canvas.getWidth(), canvas.getHeight());
-                canvas.setOnMouseClicked(event -> gc.strokeOval(margin, margin, radius, radius));
+                gc.fillRect(1, 1, canvas.getWidth() - 1, canvas.getHeight() - 1);
+                canvas.setOnMouseClicked(event -> {
+                    gc.setStroke(Color.WHITE);
+                    gc.strokeOval(margin, margin, radius, radius);
+                });
+                gridPane.add(canvas, x, y);
             }
         }
         stage.setScene(new Scene(gridPane));
